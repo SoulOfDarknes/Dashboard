@@ -27,6 +27,7 @@ body {
 .sidebar__logo {
   display: flex;
   align-items: center;
+  margin-bottom: 6rem;
 }
 .sidebar h1 {
   margin-left: 1rem;
@@ -37,7 +38,7 @@ body {
 }
 .item {
   display: flex;
-  margin: 6rem 0 0 0;
+  margin: 3rem 0 0 0;
 }
 
 .item__text {

@@ -8,6 +8,7 @@
     &__logo {
         display: flex;
         align-items: center;
+        margin-bottom: 6rem;
     }
 
     h1 {
@@ -20,7 +21,7 @@
     }
     .item {
         display: flex;
-        margin: 6rem 0 0 0;
+        margin: 3rem 0 0 0;
         padding: 1.3rem 0;
         &__text {
             margin-left: 2rem;

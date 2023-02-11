@@ -1,0 +1,30 @@
+.sidebar {
+  width: 22%;
+  background-color: #ffffff;
+}
+.sidebar__menu {
+  margin: 3rem;
+}
+.sidebar__logo {
+  display: flex;
+  align-items: center;
+}
+.sidebar h1 {
+  margin-left: 1rem;
+}
+.sidebar span {
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+.sidebar .item {
+  display: flex;
+  margin: 6rem 0 0 0;
+  padding: 1.3rem 0;
+}
+.sidebar .item__text {
+  margin-left: 2rem;
+  color: #9197b3;
+}
+.sidebar .item:hover {
+  background-color: #5932ea;
+}

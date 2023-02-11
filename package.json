@@ -1,0 +1,23 @@
+{
+  "name": "dashbord",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SoulOfDarknes/https---github.com-SoulOfDarknes-Dashbord.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SoulOfDarknes/https---github.com-SoulOfDarknes-Dashbord/issues"
+  },
+  "homepage": "https://github.com/SoulOfDarknes/https---github.com-SoulOfDarknes-Dashbord#readme",
+  "dependencies": {
+    "pug": "^3.0.2"
+  }
+}

@@ -1,0 +1,15 @@
+- var menuValue = ['Dashboard', 'Product', 'Customers', 'Income', 'Promote', 'Help'];
+.sidebar
+   .sidebar__menu
+      .sidebar__logo
+         img(src="/src/image/logo.svg", alt="logo")
+         h1.sidebar__titel Dashboard 
+            span v.01
+      nav
+      each value in menuValue
+         .item 
+            .item__picture
+               img(src="/src/image/key-square.svg", alt="key- square")
+            h2.item__text
+               p #{value}
+   .sidebar__user-info

@@ -36,15 +36,41 @@ body {
   font-size: 0.8rem;
   font-weight: 300;
 }
+.sidebar .item p {
+  font-size: 1.6rem;
+  margin-left: 2rem;
+}
 .item {
   display: flex;
-  margin: 3rem 0 0 0;
+  margin: 2rem 0 0 0;
+  padding: 1rem 0 1rem 1rem;
+  transition: all 0.5s ease;
 }
 
 .item__text {
-  margin-left: 2rem;
+  margin: auto 0;
   color: #9197b3;
 }
 .sidebar .item:hover {
   background-color: #5932ea;
+  border-radius: 0.8rem;
+  fill: white;
+  stroke: white;
+  color: white;
 }
+
+.sidebar .arrow {
+  padding: 1rem;
+  margin-left: auto;
+}
+
+.sidebar .item__picture {
+  margin-top: auto;
+}
+/* svg {
+  width: 20px;
+  height: 20px;
+  fill: black;
+  stroke: black;
+  color: white;
+} */

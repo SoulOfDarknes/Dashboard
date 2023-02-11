@@ -1,0 +1,11 @@
+mixin item(svg, name)
+   .item 
+        .item__picture
+            //- svg.icon(xmlns=`/src/image/${svg}.svg`)
+            //- use(xlink:href=`/src/image/${svg}.svg`)
+            img(src=`/src/image/${svg}.svg`, alt="menu picture")
+        .item__text
+            p= name
+        .arrow
+            img(src='/src/image/vector.svg')
+

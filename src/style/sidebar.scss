@@ -1,6 +1,11 @@
+@import "variables.scss";
 .sidebar {
+    display: flex;
     width: 22%;
-    background-color: #ffffff;
+    background-color: $text;
+    flex-direction: column;
+    justify-content: space-between;
+
     &__menu {
         margin: 3rem;
     }
@@ -19,32 +24,63 @@
         font-size: 0.8rem;
         font-weight: 300;
     }
-    .item {
+
+    a {
+        text-decoration: none;
+        color: $text;
+    }
+
+    &__item {
         display: flex;
         margin: 2rem 0 0 0;
         padding: 1rem 0 1rem 1rem;
+        border-radius: 0.8rem;
         transition: all 0.5s ease;
-
-        &__text {
-            margin: auto 0;
-            color: #9197b3;
-        }
-        p {
-            font-size: 1.6rem;
-            margin-left: 2rem;
-        }
-        &__picture {
-            margin-top: auto;
-        }
     }
-    .arrow {
+    &__text {
+        margin: auto 0;
+        color: $common-text;
+    }
+
+    p {
+        font-size: 1.6rem;
+        margin-left: 2rem;
+        color: $common-text;
+    }
+
+    p:hover {
+        color: $text;
+    }
+    &__text a:hover {
+        color: $text;
+    }
+    &__picture {
+        margin-top: auto;
+    }
+    &__arrow {
         padding: 1rem;
         margin-left: auto;
     }
-    .item:hover {
-        background-color: #5932ea;
-        border-radius: 10%;
-        fill: white;
-        stroke: white;
+
+    &__arrow:nth-child(1) {
+        display: none;
     }
+
+    &__item:hover {
+        background-color: #5932ea;
+        cursor: pointer;
+        &__text {
+            a {
+                color: $text;
+            }
+        }
+        p {
+            color: $text;
+        }
+    }
+}
+
+svg:hover {
+    fill: red;
+    stroke: red;
 }

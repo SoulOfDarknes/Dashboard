@@ -1,11 +1,31 @@
-mixin item(svg, name)
-   .item 
-        .item__picture
+mixin item(svg, name, url)
+     .sidebar__item 
+        .sidebar__picture
             //- svg.icon(xmlns=`/src/image/${svg}.svg`)
             //- use(xlink:href=`/src/image/${svg}.svg`)
             img(src=`/src/image/${svg}.svg`, alt="menu picture")
-        .item__text
-            p= name
-        .arrow
+        .sidebar__text
+            a(href=`#${url}`) 
+                p= name
+        .sidebar__arrow
             img(src='/src/image/vector.svg')
 
+mixin icon(name, url)
+  - mod = mod || ''
+    a(href="#{url}" class="#{name}_link")
+      svg(class="icon icon-" + name)
+        use(xlink:href="/src/image/wallet-money.svg#" + name)
+
+mixin log(name)
+    svg
+        use(xlink:href="/src/image/wallet-money.svg#" + name)
+
+mixin svg-icon
+  -
+    var icon = attributes['svg-icon-name']
+  
+  case icon
+    when 'chevron-right'
+      include svg/chevron-right    
+    when 'shield'
+      include svg/shield

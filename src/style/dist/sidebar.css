@@ -1,6 +1,9 @@
 .sidebar {
+  display: flex;
   width: 22%;
   background-color: #ffffff;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .sidebar__menu {
   margin: 3rem;
@@ -17,30 +20,54 @@
   font-size: 0.8rem;
   font-weight: 300;
 }
-.sidebar .item {
+.sidebar a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.sidebar__item {
   display: flex;
   margin: 2rem 0 0 0;
   padding: 1rem 0 1rem 1rem;
+  border-radius: 0.8rem;
   transition: all 0.5s ease;
 }
-.sidebar .item__text {
+.sidebar__text {
   margin: auto 0;
   color: #9197b3;
 }
-.sidebar .item p {
+.sidebar p {
   font-size: 1.6rem;
   margin-left: 2rem;
+  color: #9197b3;
 }
-.sidebar .item__picture {
+.sidebar p:hover {
+  color: #ffffff;
+}
+.sidebar__text a:hover {
+  color: #ffffff;
+}
+.sidebar__picture {
   margin-top: auto;
 }
-.sidebar .arrow {
+.sidebar__arrow {
   padding: 1rem;
   margin-left: auto;
 }
-.sidebar .item:hover {
+.sidebar__arrow:nth-child(1) {
+  display: none;
+}
+.sidebar__item:hover {
   background-color: #5932ea;
-  border-radius: 10%;
-  fill: white;
-  stroke: white;
+  cursor: pointer;
+}
+.sidebar__item:hover__text a {
+  color: #ffffff;
+}
+.sidebar__item:hover p {
+  color: #ffffff;
+}
+
+svg:hover {
+  fill: red;
+  stroke: red;
 }

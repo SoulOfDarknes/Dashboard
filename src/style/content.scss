@@ -1,0 +1,35 @@
+@import "variables.scss";
+
+.container__content {
+    width: 100vw;
+    margin: 4rem 9.5rem 25rem 7rem;
+}
+
+.content {
+    &__welcome {
+        font-size: 2.4rem;
+        font-weight: 500;
+        color: $name;
+        margin-bottom: 4rem;
+    }
+
+    &__inner {
+        width: 96rem;
+        height: 81rem;
+        background-color: $text;
+        border-radius: 3rem;
+        box-shadow: 0 1rem 6rem rgba(226, 236, 249, 0.5);
+
+        &__title {
+            h2 {
+                font-weight: 600;
+            }
+        }
+
+        p {
+            color: #16c098;
+            font-size: 1.4rem;
+            font-weight: 400;
+        }
+    }
+}

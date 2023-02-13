@@ -1,10 +1,11 @@
-.sidebar {
+.container__sidebar {
   display: flex;
-  width: 22%;
+  min-width: 22vw;
   background-color: #ffffff;
   flex-direction: column;
   justify-content: space-between;
 }
+
 .sidebar__menu {
   margin: 3rem;
 }

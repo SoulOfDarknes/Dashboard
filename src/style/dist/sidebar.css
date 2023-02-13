@@ -66,8 +66,21 @@
 .sidebar__item:hover p {
   color: #ffffff;
 }
-
-svg:hover {
-  fill: red;
-  stroke: red;
+.sidebar__user {
+  margin: 3rem;
+  display: flex;
+}
+.sidebar__user-name {
+  color: #000000;
+  margin-left: 1.2rem;
+}
+.sidebar__user-name h2 {
+  font-weight: 500;
+  font-size: 14px;
+}
+.sidebar__user-name h3 {
+  color: #757575;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12px;
 }

@@ -1,3 +1,4 @@
+//- menu block
 mixin item(svg, name, url)
      .sidebar__item 
         .sidebar__picture
@@ -10,22 +11,12 @@ mixin item(svg, name, url)
         .sidebar__arrow
             img(src='/src/image/vector.svg')
 
-mixin icon(name, url)
-  - mod = mod || ''
-    a(href="#{url}" class="#{name}_link")
-      svg(class="icon icon-" + name)
-        use(xlink:href="/src/image/wallet-money.svg#" + name)
 
-mixin log(name)
-    svg
-        use(xlink:href="/src/image/wallet-money.svg#" + name)
-
-mixin svg-icon
-  -
-    var icon = attributes['svg-icon-name']
-  
-  case icon
-    when 'chevron-right'
-      include svg/chevron-right    
-    when 'shield'
-      include svg/shield
+//- user block inmitation back-end data 
+mixin user(name, position, pic)
+    .sidebar__picture 
+        img(src=`/src/image/${pic}.png`, alt="user picture")
+    .sidebar__user-name
+        h2= name
+        .sidebar__user-position
+            h3= position

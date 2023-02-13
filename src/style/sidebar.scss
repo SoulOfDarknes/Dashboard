@@ -78,9 +78,22 @@
             color: $text;
         }
     }
-}
-
-svg:hover {
-    fill: red;
-    stroke: red;
+    &__user {
+        margin: 3rem;
+        display: flex;
+    }
+    &__user-name {
+        color: $name;
+        margin-left: 1.2rem;
+        h2 {
+            font-weight: 500;
+            font-size: 14px;
+        }
+        h3 {
+            color: $position;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 12px;
+        }
+    }
 }

@@ -3,9 +3,12 @@
     h2.content__welcome= `Hello, ${name}` 
      i &#128075
     .content__inner 
-        .conten__top
+        .content__top
             .content__title 
                 h2 All Customers 
-                    p Active Members
+                p Active Members
             .content__search
-                input(type="search")
+                img(src="/src/image/search.svg", alt="search")
+                input(type="search" name="search" placeholder="Search")
+        include mixin 
+        +table()

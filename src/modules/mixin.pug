@@ -24,4 +24,20 @@ mixin user(name, position, pic)
 
 //- content block 
 mixin table(name, company, phone, email, country, status)
-    
+    table.content__table
+        thead 
+            tr
+                th Customer Name
+                th Company
+                th Phone Number
+                th Email
+                th Country
+                th Status
+        tbody 
+            tr 
+                td Jane Cooper
+                td Microsoft
+                td (225) 555-0118
+                td jane@microsoft.com
+                td United States
+                td Active

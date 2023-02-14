@@ -13,6 +13,21 @@
         margin-bottom: 4rem;
     }
 
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 4rem;
+    }
+
+    &__title {
+        h2 {
+            font-size: 2.2rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+    }
+
     &__inner {
         width: 96rem;
         height: 81rem;
@@ -20,16 +35,33 @@
         border-radius: 3rem;
         box-shadow: 0 1rem 6rem rgba(226, 236, 249, 0.5);
 
-        &__title {
-            h2 {
-                font-weight: 600;
-            }
-        }
-
         p {
             color: #16c098;
             font-size: 1.4rem;
             font-weight: 400;
         }
+    }
+    &__search {
+        display: inline-flex;
+        border-radius: 1rem;
+        height: 4rem;
+        width: 20rem;
+        background-color: #f9fbff;
+        input {
+            border: 0;
+            background-color: #f9fbff;
+        }
+        input:focus {
+            outline: none;
+        }
+        img {
+            width: 2.4rem;
+            margin-right: 1rem;
+        }
+    }
+
+    &__table {
+        padding: 4rem;
+        width: 100%;
     }
 }

@@ -10,7 +10,7 @@
         font-size: 2.4rem;
         font-weight: 500;
         color: $name;
-        margin-bottom: 4rem;
+        margin-bottom: 5rem;
     }
 
     &__top {
@@ -29,8 +29,8 @@
     }
 
     &__inner {
-        width: 96rem;
-        height: 81rem;
+        width: 70vw;
+        height: 100vh;
         background-color: $text;
         border-radius: 3rem;
         box-shadow: 0 1rem 6rem rgba(226, 236, 249, 0.5);
@@ -41,6 +41,7 @@
             font-weight: 400;
         }
     }
+
     &__search {
         display: inline-flex;
         border-radius: 1rem;
@@ -57,11 +58,31 @@
         img {
             width: 2.4rem;
             margin-right: 1rem;
+            margin-left: 1rem;
         }
     }
 
     &__table {
-        padding: 4rem;
+        padding: 0 4rem 4rem 4rem;
         width: 100%;
+        th {
+            color: $table-head;
+            font-size: 1.4rem;
+            font-weight: 500;
+            text-align: start;
+            height: 5rem;
+            border-bottom: 1px solid #eeeeee;
+        }
+        td {
+            text-align: start;
+            font-size: 1.4rem;
+            font-weight: 500;
+            color: $table-body;
+            height: 7rem;
+            border-bottom: 1px solid #eeeeee;
+        }
+        // hr {
+        //     border: 1px solid #eeeeee;
+        // }
     }
 }

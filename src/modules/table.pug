@@ -1,0 +1,48 @@
+//- mixin table(name, company, phone, email, country, status)
+    table.content__table
+        thead 
+            tr
+                th Customer Name
+                th Company
+                th Phone Number
+                th Email
+                th Country
+                th Status
+            //- tr
+            //-     th(colspan='6')
+            //-         hr
+        tbody 
+            tr 
+                td Jane Cooper
+                td Microsoft
+                td (225) 555-0118
+                td jane@microsoft.com
+                td United States
+                td Active
+            //- tr
+            //-     td(colspan='6')
+            //-         hr
+
+
+table.content__table
+  thead
+    tr
+      th Customer Name
+      th Company
+      th Phone Number
+      th Email
+      th Country
+      th Status
+  tbody
+    if users
+      each user in users
+        tr
+          td= name
+          td= user.company
+          td= user.phone
+          td= user.email
+          td= user.country
+          td= user.status
+    else
+      tr
+        td(colspan="6") No users found

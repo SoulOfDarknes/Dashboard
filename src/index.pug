@@ -10,3 +10,59 @@ html(lang="en")
         main.container
             include modules/sidebar
             include modules/content
+        script(src="./js/index.js")
+        script(src="./js/accounts.js")
+        script(src="./js/accounts.json")
+
+
+
+
+
+//- didnt work it 
+        h1 Welcome to the Dashboard
+        table.content__table
+          thead
+            tr
+              th Customer Name
+              th Company
+              th Phone Number
+              th Email
+              th Country
+              th Status
+          tbody(id="table-body")
+
+    script.
+      const { readFileSync } = require('fs');
+      const users = JSON.parse(readFileSync('./accounts.json'));
+      const tbody = document.getElementById("table-body");
+      if (users.length) {
+        users.forEach(user => {
+          const tr = document.createElement("tr");
+          const name = document.createElement("td");
+          name.innerText = user.name;
+          const company = document.createElement("td");
+          company.innerText = user.company;
+          const phone = document.createElement("td");
+          phone.innerText = user.phone;
+          const email = document.createElement("td");
+          email.innerText = user.email;
+          const country = document.createElement("td");
+          country.innerText = user.country;
+          const status = document.createElement("td");
+          status.innerText = user.status;
+          tr.appendChild(name);
+          tr.appendChild(company);
+          tr.appendChild(phone);
+          tr.appendChild(email);
+          tr.appendChild(country);
+          tr.appendChild(status);
+          tbody.appendChild(tr);
+        });
+      } else {
+        const tr = document.createElement("tr");
+        const td = document.createElement("td");
+        td.setAttribute("colspan", "6");
+        td.innerText = "No users found";
+        tr.appendChild(td);
+        tbody.appendChild(tr);
+      }

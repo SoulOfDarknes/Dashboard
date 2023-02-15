@@ -9,22 +9,111 @@
   </head>
   <body> 
     <main class="container">
-      <div class="sidebar">
+      <div class="container__sidebar sidebar">
         <div class="sidebar__menu">
           <div class="sidebar__logo"><img src="/src/image/logo.svg" alt="logo">
             <h1 class="sidebar__titel">Dashboard <span>v.01</span></h1>
           </div>
-          <nav class="sidebar__nav">
-            <ul> 
-              <li>first</li>
-            </ul>
+          <nav>
+                        <div class="sidebar__item"> 
+                          <div class="sidebar__picture"><img src="../src/image/key-square.svg" alt="menu picture"></div>
+                          <div class="sidebar__text"><a href="#undefined"> 
+                              <p>Dashboard</p></a></div>
+                          <div class="sidebar__arrow"><img src="../src/image/vector.svg"></div>
+                        </div>
+                        <div class="sidebar__item"> 
+                          <div class="sidebar__picture"><img src="../src/image/square.svg" alt="menu picture"></div>
+                          <div class="sidebar__text"><a href="#undefined"> 
+                              <p>Product</p></a></div>
+                          <div class="sidebar__arrow"><img src="../src/image/vector.svg"></div>
+                        </div>
+                        <div class="sidebar__item"> 
+                          <div class="sidebar__picture"><img src="../src/image/user-square.svg" alt="menu picture"></div>
+                          <div class="sidebar__text"><a href="#undefined"> 
+                              <p>Customers</p></a></div>
+                          <div class="sidebar__arrow"><img src="../src/image/vector.svg"></div>
+                        </div>
+                        <div class="sidebar__item"> 
+                          <div class="sidebar__picture"><img src="../src/image/wallet-money.svg" alt="menu picture"></div>
+                          <div class="sidebar__text"><a href="#undefined"> 
+                              <p>Income</p></a></div>
+                          <div class="sidebar__arrow"><img src="../src/image/vector.svg"></div>
+                        </div>
+                        <div class="sidebar__item"> 
+                          <div class="sidebar__picture"><img src="../src/image/discount.svg" alt="menu picture"></div>
+                          <div class="sidebar__text"><a href="#undefined"> 
+                              <p>Promote</p></a></div>
+                          <div class="sidebar__arrow"><img src="../src/image/vector.svg"></div>
+                        </div>
+                        <div class="sidebar__item"> 
+                          <div class="sidebar__picture"><img src="../src/image/question.svg" alt="menu picture"></div>
+                          <div class="sidebar__text"><a href="#undefined"> 
+                              <p>Help</p></a></div>
+                          <div class="sidebar__arrow"><img src="../src/image/vector.svg"></div>
+                        </div>
           </nav>
         </div>
-        <div class="sidebar__user-info"></div>
+        <div class="sidebar__user">
+                      <div class="sidebar__picture"> <img src="../src/image/face.png" alt="user picture"></div>
+                      <div class="sidebar__user-name">
+                        <h2>Evano</h2>
+                        <div class="sidebar__user-position">
+                          <h3>Project Manager</h3>
+                        </div>
+                      </div>
+        </div>
       </div>
-      <div class="content"> 
-        <p>Contents</p>
+      <div class="container__content content"> 
+        <h2 class="content__welcome">Hello, Evano<i>&#128075</i></h2>
+        <div class="content__inner"> 
+          <div class="content__top">
+            <div class="content__title"> 
+              <h2>All Customers </h2>
+              <p>Active Members</p>
+            </div>
+            <div class="content__search"><img src="../src/image/search.svg" alt="search">
+              <input type="search" name="search" placeholder="Search">
+            </div>
+          </div>
+          <table class="content__table">
+            <thead>
+              <tr>
+                <th>Customer Name</th>
+                <th>Company</th>
+                <th>Phone Number</th>
+                <th>Email</th>
+                <th>Country</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td colspan="6">No users found</td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="content__table">
+            <thead>
+              <tr>
+                <th>Customer Name</th>
+                <th>Company</th>
+                <th>Phone Number</th>
+                <th>Email</th>
+                <th>Country</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td colspan="6">No users found</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </main>
+    <script src="./js/index.js"></script>
+    <script src="./js/accounts.js"></script>
+    <script src="./js/accounts.json"></script>
   </body>
 </html>

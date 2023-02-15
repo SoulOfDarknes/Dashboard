@@ -7,7 +7,7 @@
   font-size: 2.4rem;
   font-weight: 500;
   color: #000000;
-  margin-bottom: 4rem;
+  margin-bottom: 5rem;
 }
 .content__top {
   display: flex;
@@ -21,8 +21,8 @@
   margin-bottom: 1rem;
 }
 .content__inner {
-  width: 96rem;
-  height: 81rem;
+  width: 70vw;
+  height: 100vh;
   background-color: #ffffff;
   border-radius: 3rem;
   box-shadow: 0 1rem 6rem rgba(226, 236, 249, 0.5);
@@ -49,8 +49,25 @@
 .content__search img {
   width: 2.4rem;
   margin-right: 1rem;
+  margin-left: 1rem;
 }
 .content__table {
-  padding: 4rem;
+  padding: 0 4rem 4rem 4rem;
   width: 100%;
+}
+.content__table th {
+  color: #b5b7c0;
+  font-size: 1.4rem;
+  font-weight: 500;
+  text-align: start;
+  height: 5rem;
+  border-bottom: 1px solid #eeeeee;
+}
+.content__table td {
+  text-align: start;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #292d32;
+  height: 7rem;
+  border-bottom: 1px solid #eeeeee;
 }

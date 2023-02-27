@@ -1,4 +1,4 @@
-- const name = 'Evano'
+- const name = 'Evano';
 .container__content.content 
     h2.content__welcome= `Hello, ${name}` 
      i &#128075
@@ -11,31 +11,3 @@
                 img(src="../src/image/search.svg", alt="search")
                 input(type="search" name="search" placeholder="Search")
         include table 
-
-
-
-
-
-    div.table-container!= tableHtml
-        table.content__table
-          thead
-            tr
-              th Customer Name
-              th Company
-              th Phone Number
-              th Email
-              th Country
-              th Status
-          tbody
-            if users
-              each user in users
-                tr
-                  td= user.name
-                  td= user.company
-                  td= user.phone
-                  td= user.email
-                  td= user.country
-                  td= user.status
-            else
-              tr
-                td(colspan="6") No users found
